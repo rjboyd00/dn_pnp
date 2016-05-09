@@ -73,7 +73,9 @@ theozyme Ryan$
 
 # used avogadro to attach phosphate to ligand (rosetta matcher cant use 2 ligands) <--
 
-alex@lab$ python ~/Applications/rosetta/main/source/python/apps/public/molfile_to_params.py tss.mol2  <--used molfile_to_params.py script to generate params file
+ <--used molfile_to_params.py script to generate params file
+
+theozyme Ryan$ python2 /Applications/rosetta_bin_mac_2016.10.58534_bundle/main/source/scripts/python/public/molfile_to_params.py -n LG1 LG1.mol2
 
 Centering ligands at ( -44.231,    0.280,   -3.255)
 Atom names contain duplications -- renaming all atoms.
@@ -85,8 +87,10 @@ WARNING: fragment 1 has 25 non-H atoms; protein residues have 4 - 14 (DNA: 22)
 Average 26.0 atoms (25.0 non-H atoms) per fragment
 (Proteins average 15.5 atoms (7.8 non-H atoms) per residue)
 WARNING:  no root atom specified, using NBR atom instead.
-Wrote PDB file LG_0001.pdb
-Wrote params file LG.params
+Wrote PDB file LG1_0001.pdb
+Wrote params file LG1.params
+theozyme Ryan$  
+
 
 alex@lab$ ls
 LG.params       LG_0001.pdb     obj02.pdb       tss.mol2
